@@ -33,5 +33,3 @@ npm i express,mongoose,nodemon,bcryptjs,jsonwebtoken,cookie-parser,ejs,dotenv
  node index.js
     or
 nodemon index.js
-
-CN5es9yJOzy3PDfW harshkumarsonkar55940_db_user
