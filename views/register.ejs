@@ -1,0 +1,32 @@
+<%- include("partials/headers") %>
+<div class="container">
+    <h2>Register</h2>
+     <% if (error) { %>
+   <p style="color: red;"><%= error %></p>
+    <%} %>
+    <form method="post" action="/register">
+        <label >Name :</label>
+        <input type="text" name="name" placeholder="Full Name" required>
+        <label>Email :</label>
+        <input type="text" name="email" placeholder="Enter Email" required>
+        <label>Password:</label>
+       <div class="show-pwd"> 
+        <input type="password" id="password" name="password" placeholder="Enter Password" required>
+         <i id="togglePassword" class="fa fa-eye"></i></div>
+         <button type="submit">Register</button>
+      <p class="ask-para">Already have an account? <a href="/login">Login</a></p>
+    </form>
+</div>
+
+<script>
+    const togglePassword = document.querySelector("#togglePassword");
+    const password = document.querySelector("#password");
+
+    togglePassword.addEventListener("click",()=>{
+        const type = password.getAttribute("type")=== "password" ? "text" : "password";
+        password.setAttribute("type",type);
+        this.classList.toggle("fa-eye-slash");
+    })
+</script>
+
+<%- include("partials/footer") %>

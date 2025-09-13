@@ -1,0 +1,13 @@
+<%- include("partials/headers") %>
+
+<div class="container">
+    <h1>Welcome : <%= user.name%></h1>
+    <p>Email : <%= user.email %></p>
+    <p>This is your protected dashboard. Only logged-in users can see this.</p>
+
+    <form method="get" action="/logout">
+        <button type="submit">Logout</button>
+    </form>
+</div>
+
+<%- include("partials/footer") %>
