@@ -25,8 +25,8 @@ This app demonstrates **user authentication with JWT ,session cokkies , and prot
 ## ⚙️ Setup & Installation
 
 ### 1. Clone the repository
-
-# git clone : https://github.com/Harshkumarsonkar28/secrets-auth-app.git
+ ```bash
+git clone : https://github.com/Harshkumarsonkar28/secrets-auth-app.git
  
 ### 2. Install dependices
 npm install
